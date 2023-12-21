@@ -1,0 +1,48 @@
+.c-projectTile {
+  transition: transform 0.4s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &.c-projectTile--nook-doku {
+    color: black;
+    background-color: rgb(var(--color-project-nook-doku));
+  }
+  &.c-projectTile--boolder {
+    background-color: rgb(var(--color-project-boolder));
+  }
+  &.c-projectTile--boolder-cms {
+    background-color: rgb(var(--color-project-boolder-cms));
+  }
+  &.c-projectTile--aprl {
+    color: black;
+    background-color: rgb(var(--color-project-aprl));
+  }
+  &.c-projectTile--event-planner {
+    background-color: rgb(var(--color-project-event-planner));
+  }
+  &.c-projectTile--wisely {
+    background-color: rgb(var(--color-project-wisely));
+  }
+  &.c-projectTile--cocktail-finder {
+    background-color: rgb(var(--color-project-cocktail-finder));
+  }
+  &.c-projectTile--uci {
+    background-color: rgb(var(--color-project-uci));
+  }
+  &.c-projectTile--scrapyard {
+    background-color: rgb(var(--color-project-scrapyard));
+  }
+  &.c-projectTile--seance {
+    background-color: rgb(var(--color-project-seance));
+  }
+
+  .c-projectTile__image--centerImage {
+    width: calc(100% - theme('space.8'));
+  }
+
+  .c-projectTile__image--centerImage--horizontal {
+    height: calc(100% - theme('space.8'));
+  }
+}

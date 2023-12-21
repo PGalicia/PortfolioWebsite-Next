@@ -1,0 +1,11 @@
+.c-about {
+  .c-about__imgContainer {
+    box-shadow:
+      -0.5rem -0.5rem 0 rgb(var(--color-primary)),
+      0.5rem 0.5rem 0 rgb(var(--color-secondary));
+  }
+
+  .c-about__email:hover {
+    box-shadow: 0.25rem 0.25rem 0 rgb(var(--color-primary));
+  }
+}

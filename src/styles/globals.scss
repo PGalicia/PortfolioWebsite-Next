@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  :root {
+    --color-primary: 251 202 52;
+    --color-secondary: 128 0 32;
+    --max-width: 750px;
+
+    // Projects
+    --color-project-nook-doku: 247, 244, 232;
+    --color-project-boolder: 255, 129, 129;
+    --color-project-boolder-cms: 255, 129, 129;
+    --color-project-aprl: 255, 255, 255;
+    --color-project-event-planner: 180, 197, 220;
+    --color-project-wisely: 167, 183, 125;
+    --color-project-cocktail-finder: 250, 216, 168;
+    --color-project-uci: 255, 210, 0;
+    --color-project-scrapyard: 128, 0, 128;
+    --color-project-seance: 42, 19, 34;
+  }
+}
+
+body {
+  background-color: #1E1E1E;
+  background-image:
+    radial-gradient(circle, rgba(229, 229, 229, 0.03) 20%, transparent 10%),
+    radial-gradient(circle, rgba(229, 229, 229, 0.03) 20%, transparent 10%);
+  background-size: 0.75rem 0.75rem;
+  background-position: 100% 100%;
+}
