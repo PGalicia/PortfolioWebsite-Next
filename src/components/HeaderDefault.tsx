@@ -61,7 +61,7 @@ export default function HeaderDefault({ className = '' }: DefaultPropType) {
           <span className="text-2xl md:text-4xl mr-4 font-bold italic">and</span>
           <span ref={typeElement} className="typed text-2xl md:text-4xl" />
         </div>
-        <div className="my-8">
+        <div className="my-8 flex flex-col gap-2">
           <LinkDefault text="Projects" link="#projects" />
           <LinkDefault text="About" link="#about" />
           <LinkDefault text="Work" link="#work" />

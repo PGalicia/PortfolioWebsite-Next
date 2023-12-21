@@ -60,12 +60,12 @@ export default function Home() {
           text="View my resume"
           link="/resume.pdf"
           isExternal={true}
-          className="block my-8"
+          className="block mt-8"
         />
       </div>
 
       {/* Links */}
-      <div className="flex justify-center gap-12 py-4">
+      <div className="flex justify-between md:justify-center gap-0 md:gap-12 py-4">
         <LinkDefault
           text="Github"
           link="https://github.com/PGalicia"

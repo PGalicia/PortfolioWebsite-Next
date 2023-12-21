@@ -40,7 +40,7 @@ export default function AboutDefault({ className = '' }: DefaultPropType) {
             galicia.patrick@gmail.com
           </a>
         </div>
-        <div className="my-8">
+        <div className="my-8 flex flex-col gap-2">
           <LinkDefault
             text="Github"
             link="https://github.com/PGalicia"
