@@ -4,6 +4,6 @@ export const TYPEWRITER_TEXTS = [
   'a gaming completionist.',
   'an avid napper.',
   'a Lakers fanboy.',
-  ' scared of horror movies.',
-  ' pineapple on a pizza enthusiast.'
+  'scared of horror movies.',
+  'a pineapple on pizza enthusiast.'
 ]

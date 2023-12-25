@@ -4,8 +4,8 @@
 
 @layer {
   :root {
-    --color-primary: 251 202 52;
-    --color-secondary: 128 0 32;
+    --color-primary: 255 159 41;
+    --color-secondary: 26 77 46;
     --max-width: 750px;
 
     // Projects
@@ -23,7 +23,7 @@
 }
 
 body {
-  background-color: #1E1E1E;
+  background-color: #0e0e0e;
   background-image:
     radial-gradient(circle, rgba(229, 229, 229, 0.03) 20%, transparent 10%),
     radial-gradient(circle, rgba(229, 229, 229, 0.03) 20%, transparent 10%);

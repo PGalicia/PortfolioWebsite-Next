@@ -1,17 +1,14 @@
 .c-link {
-  transition: transform 0.4s;
-
   &:hover {
     color: rgb(var(--color-primary));
-    text-shadow: 2px 2px 0 rgb(var(--color-secondary));
-    transform: scale(1.125);
+    text-shadow: 1px 1px 0 rgb(var(--color-secondary));
 
     .c-link__symbol {
-      margin-right: 0.5rem;
+      margin-right: 0.25rem;
     }
   }
 
   .c-link__symbol {
-    transition: margin-right 0.4s;
+    transition: margin-right 0.2s;
   }
 }
