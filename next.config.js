@@ -7,6 +7,19 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'src/styles')],
   },
+  async headers() {
+    return [
+      {
+        source: '/images/portrait.png',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'image/png'
+          },
+        ],
+      },
+    ];
+  },
 }
 
 module.exports = nextConfig
