@@ -9,19 +9,17 @@ export const PROJECTS: ProjectType[] = [
       crossing villager's information</p>
       <p class="mb-6"><strong>How It Works</strong>: Similar to grid-based games such as PokeDoku or HoopGrids, you need to find answer that fits the category.
       Let's say that there's a cell in the grid with the categories of Penguin and Jock for example. You need to find a villager that is in penguin species and
-      has a jock personality (in this example, one answer would be Roald). In the case, you got stuck, there is also a hint system</p>
+      has a jock personality (in this example, one answer would be Roald). In case you get stuck, there is also a hint system.</p>
       <p class="mb-6">The app also records all of your answers just to see which villagers you usually pick (aka your favorites)</p>
-      <p class="mb-4 italic text-sm font-light">Note: As of December 2023, this project is currently still in development. You can check out the roadmap 
-      <a class="underline font-thin hover:font-bold underline-offset-2" href="https://trello.com/b/TqnSl8Ul/nookdoku-development-roadmap" target="_blank">here</a></p>
     `,
     stack: ['ReactJs', 'NextJs', 'Redux', 'Javascript/Typescript', 'ESLint', 'Tailwind CSS/SASS'],
-    images: ['filled-in-board.png', 'empty-board.png', 'modal.png', 'modal-with-hints.png', 'villager-stats.png'],
+    images: ['filled-in-board.png', 'empty-board.png', 'modal.png', 'modal-with-hints.png', 'game-stats.png'],
     githubRepoLink: 'https://github.com/PGalicia/NookDoku-Next',
     demoLink: {
       text: 'View App',
       link: 'https://nook-doku-next.vercel.app/'
     },
-    backgroundColorHex: '#F7F4E8'
+    backgroundColorHex: '#0140E7'
   },
   {
     id: 'boolder',
@@ -62,7 +60,7 @@ export const PROJECTS: ProjectType[] = [
     description: `<p class="mb-6">A web application that lets users create and manage events, including the attendees, and items needed for the events. This side project was made to help organize events in my friend group.</p>
       <p class="mb-6"><strong>How It Works</strong>: For the homepage, the web app displays a “create an event” button and all the events the user has created. The top event section will always showcase the latest upcoming event <i>(if available)</i>, the middle section will always showcase the possible future events, and the last section would showcase the past events. In each event card, users can see the following information: event name, datetime, location, edit button, delete button, and “See more” button.</p>
       <p class="mb-6">If the user pressed “See more”, they will not only see the core information about the event <i>(as mentioned above)</i> but also additional information, such as the attendees and the needed items for the event <i>(as shown below)</i>. For the items section, each item is color coded and each item’s color(s) corresponds to the color associated with each attendee, displaying which users are responsible for what items. In addition, users can reassign item responsibility by pressing the “Reassign Items” located at the bottom of the event page.</p>
-      <p class="mb-4 italic text-sm font-light">Note: As of December 2023, this is a proof of concept and would want to expand on it in the future.</p>
+      <p class="mb-4 italic text-sm">Note: As of December 2023, this is a proof of concept and would want to expand on it in the future.</p>
       `,
     stack: ['ReactJs', 'Redux', 'NodeJs', 'ExpressJs', 'HTML5', 'CSS/SASS', 'SQLite', 'Sequelize', 'Jest', 'Webpack'],
     images: ['home-page.png', 'view-event-page.png', 'edit-event-page.png', 'reassign-item-page.png', 'create-event-page.png'],
@@ -153,7 +151,7 @@ export const PROJECTS: ProjectType[] = [
     description: `<p class="mb-6">A roguelike game let's you control of a bellhop, Esteban, as you keep your terrifying guest happy ... or else.</p>
       <p class="mb-6"><strong>How It Works</strong>: The player can control the bellhop which has one main ability, to throw food at their guests. His guests comprise of monsters: Frankenstein, Witch, and Ghost.</p>
       <p class="mb-6">The bellhop must throw food to each of the guests to lower their hunger because if not they will become enraged. This will emit an aura around each enraged monster, draining the player’s sanity when they are around them. The game ends when the player’s sanity reaches zero.</p>
-      <p class="mb-4 italic text-sm font-light">Note: More details about each character and mechanic of the game can be found @ <a class="underline font-thin hover:font-bold underline-offset-2" href="https://github.com/PGalicia/Seance" target="_blank">Github Repo</a></p>
+      <p class="mb-4 italic text-sm">Note: More details about each character and mechanic of the game can be found @ <a class="underline font-thin hover:font-bold underline-offset-2" href="https://github.com/PGalicia/Seance" target="_blank">Github Repo</a></p>
       `,
     stack: ['Lua', 'Love2D', 'Tiled', 'Aseprite'],
     images: ['game-photo.png', 'character-models.gif'],

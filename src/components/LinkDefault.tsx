@@ -24,7 +24,7 @@ export default function LinkDefault({ text, link = '#', size = 'small' }: LinkDe
     ]
 
     if (size === 'small') {
-      allClasses.push('text-lg')
+      allClasses.push('text-xl')
     } else if (size === 'medium') {
       allClasses.push('text-base', 'md:text-xl')
     }

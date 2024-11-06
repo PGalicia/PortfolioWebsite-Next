@@ -9,16 +9,16 @@ export const TOOLBOX: ToolboxType[] = [
         isPro: true
       },
       {
-        skill: 'PHP',
-        isPro: true
-      },
-      {
         skill: 'HTML5',
         isPro: true
       },
       {
         skill: 'CSS3/SCSS/SASS',
         isPro: true
+      },
+      {
+        skill: 'PHP',
+        isPro: false
       },
       {
         skill: 'Python',
@@ -42,11 +42,11 @@ export const TOOLBOX: ToolboxType[] = [
     title: 'Frameworks/Libraries',
     list: [
       {
-        skill: 'Vue/Nuxt/Pinia',
+        skill: 'React/Next/Redux',
         isPro: true
       },
       {
-        skill: 'React/Next/Redux',
+        skill: 'Vue/Nuxt/Pinia',
         isPro: true
       },
       {

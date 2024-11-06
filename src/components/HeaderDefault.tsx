@@ -50,7 +50,7 @@ export default function HeaderDefault({ className = '' }: DefaultPropType) {
           Patrick Galicia
         </div>
         <div className="mb-4 md:mb-8 flex flex-col md:flex-row items-start md:items-center gap-4">
-          <div className="text-2xl md:text-4xl mr-4 font-light">
+          <div className="text-2xl md:text-4xl mr-4 font-mono">
             I am a
           </div>
           <div className={`bg-secondary p-4 text-2xl md:text-4xl font-source italic text-white w-fit ${source.className}`}>

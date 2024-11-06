@@ -26,22 +26,12 @@ export default function ToolboxTools({ toolbox }: ToolboxToolsPropType) {
         {list.map(({ skill, isPro }, index) => (
           <div
             key={skill}
-            className={`mr-2 ${ !isPro ? 'font-light' : '' }`}
+            className={`mr-2 ${ !isPro ? 'opacity-50' : '' }`}
           >
             {skill}
             {index < (list.length - 1) && <span>,</span>}
           </div>
         ))}
-        {/* <div
-          v-for="({ skill, isPro }, index) in list"
-          :key="skill"
-          className="mr-2"
-          :className="{
-            'font-light': !isPro
-          }"
-        >
-          {{ skill }}<span v-if="index < (list.length - 1)">,</span>
-        </div> */}
       </div>
     </div>
   )

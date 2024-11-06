@@ -9,7 +9,7 @@
     --max-width: 750px;
 
     // Projects
-    --color-project-nook-doku: 247, 244, 232;
+    --color-project-nook-doku: 1 64 231;
     --color-project-boolder: 255, 129, 129;
     --color-project-boolder-cms: 255, 129, 129;
     --color-project-aprl: 255, 255, 255;
@@ -24,9 +24,7 @@
 
 body {
   background-color: #0e0e0e;
-  background-image:
-    radial-gradient(circle, rgba(229, 229, 229, 0.03) 20%, transparent 10%),
-    radial-gradient(circle, rgba(229, 229, 229, 0.03) 20%, transparent 10%);
-  background-size: 0.75rem 0.75rem;
-  background-position: 100% 100%;
+  opacity: 1;
+  background-image: radial-gradient(rgba(229, 229, 229, 0.2) 1.4500000000000002px, #0e0e0e 1.4500000000000002px);
+  background-size: 29px 29px;
 }

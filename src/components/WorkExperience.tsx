@@ -23,8 +23,17 @@ export default function WorkExperience({ experience, className = '' }: WorkExper
     link,
     location,
     dateString,
+    isLaidOff,
     tasks
   } = experience
+
+  function isLaidOffText () {
+    if (isLaidOff) {
+      return ` ${String.fromCharCode(8226)} Departure due to company layoff`;
+    } else {
+      return '';
+    }
+  }
 
   return (
     <div className={className}>
@@ -41,21 +50,12 @@ export default function WorkExperience({ experience, className = '' }: WorkExper
       />
 
       {/* Location */}
-      <div className="text-sm md:text-base font-light">
-        {location} &bull; {dateString}
+      <div className="text-sm md:text-base opacity-75">
+        {location} &bull; {dateString}{isLaidOffText()}
       </div>
 
       {/* Tasks */}
       <ul className="list-disc pl-8 md:pl-12 mt-4 md:mt-8">
-        {/* <li
-          v-for="(task, index) in tasks"
-          :key="index"
-          :className="{
-            'mt-2': index > 0
-          }"
-        >
-          {{ task }}
-        </li> */}
         {tasks.map((task, index) => (
           <li
             key={index}

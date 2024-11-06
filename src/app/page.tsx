@@ -81,8 +81,8 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <div className="text-center text-sm font-light">&copy; 2023 Patrick Galicia &bull; Full Stack Engineer</div>
-      <div className="text-center text-sm font-light mt-1 mb-8">Website Stack: ReactJs, Redux, Javascript/Typescript, Tailwind CSS/SASS</div>
+      <div className="text-center text-sm">&copy; {new Date().getFullYear()} Patrick Galicia &bull; Full Stack Engineer</div>
+      <div className="text-center text-sm mt-1 mb-8">Website Stack: ReactJs, Redux, Javascript/Typescript, Tailwind CSS/SASS</div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 export const TYPEWRITER_TEXTS = [
-  'currently working for Fandom!',
+  'currently looking for new job opportunities!',
   'a father of Shiba Inu.',
   'a gaming completionist.',
   'an avid napper.',

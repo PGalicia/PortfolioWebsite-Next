@@ -29,10 +29,10 @@ export default function AboutDefault({ className = '' }: DefaultPropType) {
       </div>
       <div>
         <p className="text-base mb-6">
-          Hi, I&apos;m <span className="text-white font-bold">Patrick Galicia</span>, a <span className="text-white">full-stack engineer</span> based in Los Angeles, California, currently working for a wiki hosting service, <LinkInline link="https://www.fandom.com/" text="Fandom" isExternal={true} />. The foundation of my career was shaped with a bachelors in software engineering and still continuously learning all of its nuances, be it the best practices or wherever my curiosity drives me.
+          Hi, I&apos;m <span className="text-white font-bold">Patrick Galicia</span>, a <span className="text-white">full-stack engineer</span> based in Los Angeles, California. I am currently looking for new job opportunities! The foundation of my career was shaped with a B.S. in software engineering and I am still continuously learning all of its nuances, be it best practices or wherever my curiosity drives me.
         </p>
         <div>
-          <span className="mr-2 font-light">Say hi:</span>
+          <span className="mr-2">Say hi:</span>
           <a
             href="mailto:galicia.patrick@gmail.com"
             className={`${styles['c-about__email']} text-white bg-secondary p-2 font-source italic text-base transition-all`}

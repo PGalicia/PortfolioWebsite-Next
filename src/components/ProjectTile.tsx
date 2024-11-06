@@ -44,7 +44,6 @@ export default function ProjectTile({ project, className = '' }: ProjectTileProp
   function containerClasses() {
     const allClasses = [
       className,
-      // `c-projectTile--${id}`,
       styles['c-projectTile'],
       styles[`c-projectTile--${id}`],
       'relative',
@@ -142,7 +141,7 @@ export default function ProjectTile({ project, className = '' }: ProjectTileProp
           <div className="text-2xl md:text-3xl font-bold">
             {name}
           </div>
-          <div v-if="tier < 3" className="text-sm md:text-base font-light">
+          <div v-if="tier < 3" className="text-sm font-mono uppercase">
             {category}
           </div>
         </>
