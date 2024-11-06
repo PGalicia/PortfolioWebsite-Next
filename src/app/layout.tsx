@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: 'Patrick Galicia',
     images: [
       {
-        url: '/images/portrait.png',
+        url: 'https://www.patrickgalicia.com/images/portrait.png',
         alt: 'Patrick Galicia\'s photo',
       },
     ],
