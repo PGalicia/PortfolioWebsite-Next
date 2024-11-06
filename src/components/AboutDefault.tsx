@@ -21,7 +21,7 @@ export default function AboutDefault({ className = '' }: DefaultPropType) {
       <div className={`${styles['c-about__imgContainer']} h-72 md:h-96 w-full md:w-80 bg-white shrink-0 overflow-hidden relative`}>
         <Image
           className="absolute w-full h-auto top-1/2 -translate-y-1/2"
-          src="/images/portrait.jpeg"
+          src="/images/portrait.png"
           alt="Patrick Galicia Portrait"
           width="3024"
           height="4032"
