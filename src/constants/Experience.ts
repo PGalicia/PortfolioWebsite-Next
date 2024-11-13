@@ -9,9 +9,9 @@ export const EXPERIENCE: ExperienceType[] = [
     dateString: 'October 2022 - November 2024',
     isLaidOff: true,
     tasks: [
-      'Collaborated with multiple teams across Fandom organization to complete months long initiative regarding Metacritic site transition to NuxtJs Framework.',
-      'Assisted in managing our services such as our email service, and in-house NuxtJs Framework.',
-      'Improved indirect ads performance by implementing lazy loads on certain ad units and performing experiments to test different ad placements.',
+      'Collaborated with multiple teams across Fandom organization to complete months long initiative regarding Metacritic site transition to NuxtJs Framework that increased site performance by 30%.',
+      'Improved indirect ads performance by 20% by implementing lazy loads on certain ad units and performing experiments to test different ad placements.',
+      'Implemented reusable frontend modules in the Fandom webpage using React.js, streamlining development and improving code maintainability.',
       'Supported new engineers in grasping our team\'s tech stack for seamless integration and productivity.'
     ]
   },
@@ -23,9 +23,9 @@ export const EXPERIENCE: ExperienceType[] = [
     dateString: 'November 2020 - October 2022',
     isLaidOff: false,
     tasks: [
-      'Led frontend development for multiple major initiatives such as our commerce and authentication systems.',
-      'Contributed to modernizing the site by phasing out deprecated frameworks, and transitioning to TypeScript and VueJs.',
-      'Enhanced sites performance by migrating to webpack, and improving core web vitals.'
+      'Led frontend development for major initiatives, including an overhaul of Giantbomb\'s authentication process, which increased new user signups by 10% and improved authentication page performance by 45%.',
+      'Enhanced site performance by migrating to Webpack, improving core web vitals by 20%, leading to faster load times and a better user experience.',
+      'Contributed to modernizing the site by phasing out deprecated frameworks, and transitioning to TypeScript and VueJs.'
     ]
   },
   {
