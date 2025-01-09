@@ -11,6 +11,7 @@ import { closeModal } from '@/redux/features/modalSlice'
 // Components
 import Image from 'next/image'
 import ButtonDefault from '@/components/ButtonDefault'
+import { XMarkIcon } from '@heroicons/react/24/outline';
 
 // Types
 import type { ProjectType } from '@/types/ProjectType'
@@ -60,98 +61,89 @@ export default function ModalDefault() {
       : 'md:grid-cols-2';
   }
 
+  function closeProjectModal() {
+    dispatch(closeModal());
+  }
+
   return (
-    <div
-      className="fixed top-0 bottom-0 left-0 right-0 bg-black/30 flex justify-center items-center"
-      onClick={() => dispatch(closeModal())}
-    >
-      <div
-        className={`${styles['c-modalShadow']} absolute h-full w-full max-h-auto md:max-h-[75%] max-w-auto md:max-w-[800px] border-3 border-solid border-secondary rounded-lg overflow-hidden bg-white text-black flex flex-col`}
-        onClick={e => e.stopPropagation()}
-      >
-        <div className="w-full h-fit bg-primary border-b-3 border-solid border-secondary py-2 px-4 flex justify-between">
-          <div>
-            Project: {name}
-          </div>
-          <div
-            className="font-bold cursor-pointer hover:text-white"
-            onClick={() => dispatch(closeModal())}
+    <div className="fixed top-0 left-0 w-screen h-screen bg-white overflow-y-scroll border-4 md:border-8 border-primary u-slideUp">
+      <div className="w-full max-w-auto md:max-w-[800px] text-black flex flex-col py-8 px-4 mx-auto my-0">
+        {/* Name */}
+        <div className="text-4xl font-bold mb-8 flex justify-between items-center gap-8">
+          <h4>{name}.</h4>
+          <button
+            className="w-8 aspect-square transition-colors bg-slate-200 hover:bg-slate-100 rounded-md p-2 box-content"
+            onClick={closeProjectModal}
           >
-            &#x2715;
-          </div>
+            <XMarkIcon />
+          </button>
         </div>
-        <div className="p-8 overflow-y-scroll">
-          {/* Name */}
-          <div className="text-4xl font-bold mb-8">
-            {name}.
-          </div>
 
-          {/* Description */}
-          <div className="text-xl font-semibold mb-2">
-            Description:
-          </div>
-          <div dangerouslySetInnerHTML={{ __html: description }} />
+        {/* Description */}
+        <div className="text-xl font-semibold mb-2">
+          Description:
+        </div>
+        <div dangerouslySetInnerHTML={{ __html: description }} />
 
-          {/* Stack */}
-          <div className="text-xl font-semibold mb-2">
-            Stack:
-          </div>
-          <div className="text-xl mb-6">
-            {stack.join(', ')}
-          </div>
+        {/* Stack */}
+        <div className="text-xl font-semibold mb-2">
+          Stack:
+        </div>
+        <div className="text-xl mb-6">
+          {stack.join(', ')}
+        </div>
 
-          {/* Images */}
-          {images.length > 0 &&
-            <div className="text-xl font-semibold mb-4">
-              Images:
-            </div>
-          }
+        {/* Images */}
+        {images.length > 0 &&
+          <div className="text-xl font-semibold mb-4">
+            Images:
+          </div>
+        }
 
-          {images.length > 0 &&
-            <div className="flex flex-col gap-8 mb-6">
-              {images.map((image, index) => (
-                <div key={index}>
-                  <div className={`${styles['c-modalShadow']} rounded-lg border-3 border-solid border-secondary overflow-hidden`}>
-                    <Image
-                      src={`/images/projects/screenshots/${projectId}/${image}`}
-                      alt={`${projectId} image`}
-                      className="w-full"
-                      height="500"
-                      width="500"
-                    />
-                  </div>
-                  <div className="text-center font-semibold mt-4">
-                    {parseImageName(image)}
-                  </div>
+        {images.length > 0 &&
+          <div className="flex flex-col gap-8 mb-6 mx-4 md:mx-24">
+            {images.map((image, index) => (
+              <div key={index}>
+                <div className={`${styles['c-modalShadow']} rounded-lg border-3 border-solid border-secondary overflow-hidden`}>
+                  <Image
+                    src={`/images/projects/screenshots/${projectId}/${image}`}
+                    alt={`${projectId} image`}
+                    className="w-full"
+                    height="500"
+                    width="500"
+                  />
                 </div>
-              ))}
-            </div>
-          }
-
-          {/* Buttons */}
-          <div className={`grid grid-cols-1 ${buttonContainerExtraClass()} gap-4 w-full`}>
-            {demoLink &&
-              <ButtonDefault
-                text={demoLink.text}
-                link={demoLink.link}
-                isExternal={true}
-              />
-            }
-            {githubRepoLinks.length > 0 &&
-              <ButtonDefault
-                text={githubRepoLinks[0].text}
-                link={githubRepoLinks[0].link}
-                isExternal={true}
-              />
-            }
-            {githubRepoLinks.length > 1 &&
-              <ButtonDefault
-                text={githubRepoLinks[1].text}
-                link={githubRepoLinks[1].link}
-                isExternal={true}
-              />
-            }
+                <div className="text-center font-semibold mt-4">
+                  {parseImageName(image)}
+                </div>
+              </div>
+            ))}
           </div>
+        }
+
+        {/* Buttons */}
+        <div className={`grid grid-cols-1 ${buttonContainerExtraClass()} gap-4 w-full`}>
+          {demoLink &&
+            <ButtonDefault
+              text={demoLink.text}
+              link={demoLink.link}
+              isExternal={true}
+            />
+          }
+          {githubRepoLinks.length > 0 &&
+            <ButtonDefault
+              text={githubRepoLinks[0].text}
+              link={githubRepoLinks[0].link}
+              isExternal={true}
+            />
+          }
+          {githubRepoLinks.length > 1 &&
+            <ButtonDefault
+              text={githubRepoLinks[1].text}
+              link={githubRepoLinks[1].link}
+              isExternal={true}
+            />
+          }
         </div>
       </div>
     </div>
