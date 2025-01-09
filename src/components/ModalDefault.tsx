@@ -39,9 +39,9 @@ export default function ModalDefault() {
     description,
     stack,
     images,
-    demoLink,
-    githubRepoLink
-  } = currentProject
+    demoLink = null,
+    githubRepoLinks = []
+  }: ProjectType = currentProject
 
   /**
    * Methods
@@ -52,6 +52,12 @@ export default function ModalDefault() {
       imageName[i] = imageName[i][0].toUpperCase() + imageName[i].substring(1)
     }
     return imageName.join(' ')
+  }
+
+  function buttonContainerExtraClass(): string {
+    return githubRepoLinks.length > 1
+      ? ''
+      : 'md:grid-cols-2';
   }
 
   return (
@@ -122,29 +128,8 @@ export default function ModalDefault() {
             </div>
           }
 
-          {/* <div
-            v-if="images.length > 0"
-            className="flex flex-col gap-8 mb-6"
-          >
-            <div
-              v-for="(image, index) in images"
-              :key="index"
-            >
-              <div className="c-modalShadow rounded-lg border-3 border-solid border-secondary overflow-hidden">
-                <img
-                  :src="`_nuxt/assets/images/projects/screenshots/${projectId}/${image}`"
-                  :alt="`${projectId} image`"
-                  className="w-full"
-                >
-              </div>
-              <div className="text-center font-semibold mt-4">
-                {{ parseImageName(image) }}
-              </div>
-            </div>
-          </div> */}
-
           {/* Buttons */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+          <div className={`grid grid-cols-1 ${buttonContainerExtraClass()} gap-4 w-full`}>
             {demoLink &&
               <ButtonDefault
                 text={demoLink.text}
@@ -152,10 +137,17 @@ export default function ModalDefault() {
                 isExternal={true}
               />
             }
-            {githubRepoLink &&
+            {githubRepoLinks.length > 0 &&
               <ButtonDefault
-                text="Check Github Repo"
-                link={githubRepoLink}
+                text={githubRepoLinks[0].text}
+                link={githubRepoLinks[0].link}
+                isExternal={true}
+              />
+            }
+            {githubRepoLinks.length > 1 &&
+              <ButtonDefault
+                text={githubRepoLinks[1].text}
+                link={githubRepoLinks[1].link}
                 isExternal={true}
               />
             }

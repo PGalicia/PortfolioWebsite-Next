@@ -2,6 +2,36 @@ import type { ProjectType } from '@/types/ProjectType'
 
 export const PROJECTS: ProjectType[] = [
   {
+    id: 'wisely',
+    name: 'Wisely',
+    category: 'Budget Management App',
+    description: `<p class="mb-6">A web application that takes your “spending money” and allocate it to the items you want to use the money on.</p>
+      <p class="mb-6"><strong>How It Works</strong>: The web app allows its users to input the items that they want to save up for. The spending money is then allocated to the items the users listed, prioritizing items with higher priority. For example, consider you have a spending money of $100 and three items with their corresponding 
+      cost: Item A($50), Item B($75), Item C($30). Item A will then be set to have priority "High", which is the highest priority, and the other two items will be set to the default priority, which is the "Medium" priority.
+      The spending money will then prioritize allocating to Item A and once its complete it will then allocate the rest of the money to the next priority item, in this case, Item B and Item C. Since the 
+      last two items have the same priority, the app will prioritize the more expensive item.</p>
+      <p class="mb-6">This web app is a refresh of an old project of mine to utilize more modern frameworks/libraries. If you are interested in that you can check out this <a class="underline font-bold underline-offset-2" href="https://github.com/PGalicia/Wisely" target="_blank">repo</a>.</p>
+      <p class="mb-4 italic text-sm font-light">Note: This is still an ongoing project and you can see some of the improvements and features I want to add <a class="underline font-bold underline-offset-2" href="https://trello.com/b/fhsavuoY/budget-planner" target="_blank">here</a>.</p>
+      `,
+    stack: ['ReactJs', 'NextJs', 'Redux', 'Javascript/Typescript', 'ESLint', 'Tailwind CSS/SASS', 'NodeJs', 'ExpressJs', 'GraphQL', 'MongoDB', 'AWS'],
+    images: ['home-page.png', 'wishlist-states.png', 'add-item-modal.png', 'delete-wishlist-popup.png'],
+    githubRepoLinks: [
+      {
+        text: 'Check Frontend Github Repo',
+        link: 'https://github.com/PGalicia/Wisely-Next'
+      },
+      {
+        text: 'Check Backend Github Repo',
+        link: 'https://github.com/PGalicia/Wisely-Express'
+      }
+    ],
+    demoLink: {
+      text: 'View Demo',
+      link: 'https://wisely-next.vercel.app/demo'
+    },
+    backgroundColorHex: '#A7B77D'
+  },
+  {
     id: 'nook-doku',
     name: 'Nook Doku',
     category: 'Web App',
@@ -14,7 +44,12 @@ export const PROJECTS: ProjectType[] = [
     `,
     stack: ['ReactJs', 'NextJs', 'Redux', 'Javascript/Typescript', 'ESLint', 'Tailwind CSS/SASS'],
     images: ['filled-in-board.png', 'empty-board.png', 'modal.png', 'modal-with-hints.png', 'game-stats.png'],
-    githubRepoLink: 'https://github.com/PGalicia/NookDoku-Next',
+    githubRepoLinks: [
+      {
+        text: 'Check Github Repo',
+        link: 'https://github.com/PGalicia/NookDoku-Next'
+      }
+    ],
     demoLink: {
       text: 'View App',
       link: 'https://nook-doku-next.vercel.app/'
@@ -31,7 +66,12 @@ export const PROJECTS: ProjectType[] = [
     `,
     stack: ['VueJs', 'NuxtJs', 'Pinia', 'Javascript/Typescript', 'ESLint', 'Tailwind CSS/SASS'],
     images: ['home-page.png', 'select-build-modal.png', 'home-page-with-build.png'],
-    githubRepoLink: 'https://github.com/PGalicia/Hades-Boolder-Client-Nuxt',
+    githubRepoLinks: [
+      {
+        text: 'Check Github Repo',
+        link: 'https://github.com/PGalicia/Hades-Boolder-Client-Nuxt'
+      }
+    ],
     demoLink: {
       text: 'View App',
       link: 'https://hades-boolder-client-nuxt.vercel.app/'
@@ -46,7 +86,6 @@ export const PROJECTS: ProjectType[] = [
       Designed as an informative platform, it showcases APRL's mission while highlighting the diverse range of services they provide. Additionally, the site acts as a promotional hub, spotlighting their innovative app and serving as a central point for visitors to connect and engage with the APRL team.</p>`,
     stack: ['ReactJs', 'Redux', 'HTML5', 'CSS/SASS'],
     images: ['home-page.png'],
-    githubRepoLink: '',
     demoLink: {
       text: 'Visit Site',
       link: 'https://aprl.la/'
@@ -64,32 +103,17 @@ export const PROJECTS: ProjectType[] = [
       `,
     stack: ['ReactJs', 'Redux', 'NodeJs', 'ExpressJs', 'HTML5', 'CSS/SASS', 'SQLite', 'Sequelize', 'Jest', 'Webpack'],
     images: ['home-page.png', 'view-event-page.png', 'edit-event-page.png', 'reassign-item-page.png', 'create-event-page.png'],
-    githubRepoLink: 'https://github.com/PGalicia/EventPlanner',
+    githubRepoLinks: [
+      {
+        text: 'Check Github Repo',
+        link: 'https://github.com/PGalicia/EventPlanner'
+      }
+    ],
     demoLink: {
       text: 'View Demo',
       link: 'https://eventplanner-ccb48.firebaseapp.com/'
     },
     backgroundColorHex: '#B4C5DC'
-  },
-  {
-    id: 'wisely',
-    name: 'Wisely',
-    category: 'Budget Management App',
-    description: `<p class="mb-6">A web application that takes a percentage amount of your total money as your “spending money” and allocate it to the items you want to use the money on.</p>
-      <p class="mb-6"><strong>How It Works</strong>: The web app allows its users to input the items that they want to save up for and the users' total money <i>(ie the total money you have in your bank account)</i>. 
-      A percentage is then taken out of the inputted "total money" and set it as your spending money. As the default, 30% of your total would be used but this can be changed based on your preference.</p>
-      <p class="mb-6">The spending money is then allocated to the items the users listed, prioritizing items with higher priority. For example, consider you have a spending money of $100 and three items with their corresponding 
-      cost: Item A($50), Item B($75), Item C($30). Item A will then be set to have priority 1, which is the highest priority, and this makes the other two items have a default priority of 2. 
-      The spending money will then prioritize allocating to Item A and once its complete it will then allocate the rest of the money to the next priority item, in this case, Item B and Item C. Since the 
-      last two items, have the same priority, the remaining spending money will then be split between the two.</p>
-      <p class="mb-4 italic text-sm font-light">Note: As of December 2023, I am currently working on a version 2 of this web app, which you can see <a class="underline font-thin hover:font-bold underline-offset-2" href="https://drive.google.com/open?id=1BQDNJLEtZZiBB2hCC3bDnlWoYTrFS94E" target="_blank">here</a>. 
-      I am planning to redo the project from the ground up, utilizing modern framework</p>
-      `,
-    stack: ['Python', 'Flask', 'HTML5', 'CSS3', 'JavaScript', 'JQuery', 'PySQL', 'MySQL'],
-    images: ['home-page.png', 'edit-money-modal.png', 'edit-item-name-modal.png'],
-    githubRepoLink: 'https://github.com/PGalicia/Wisely',
-    demoLink: null,
-    backgroundColorHex: '#A7B77D'
   },
   {
     id: 'cocktail-finder',
@@ -102,7 +126,12 @@ export const PROJECTS: ProjectType[] = [
       `,
     stack: ['ReactJs', 'Redux', 'HTML5', 'CSS/SASS', 'Webpack'],
     images: ['home-page.png', 'filtered-result-page.png'],
-    githubRepoLink: 'https://github.com/PGalicia/CocktailFinder',
+    githubRepoLinks: [
+      {
+        text: 'Check Github Repo',
+        link: 'https://github.com/PGalicia/CocktailFinder'
+      }
+    ],
     demoLink: {
       text: 'View Demo',
       link: 'https://pgalicia.github.io/CocktailFinder/'
@@ -128,8 +157,12 @@ export const PROJECTS: ProjectType[] = [
       `,
     stack: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'JQuery'],
     images: ['home-page.png', 'category-page.png', 'modal.png'],
-    githubRepoLink: 'https://github.com/PGalicia/HealthyCampusWebsite',
-    demoLink: null,
+    githubRepoLinks: [
+      {
+        text: 'Check Github Repo',
+        link: 'https://github.com/PGalicia/HealthyCampusWebsite'
+      }
+    ],
     backgroundColorHex: '#FFD200'
   },
   {
@@ -140,8 +173,12 @@ export const PROJECTS: ProjectType[] = [
       <p class="mb-6"><strong>How It Works</strong>: Similar to other e-commerce websites, the website displays our product and allow users to buy them by specifying which product they want to buy and after they input their personal information <i>(i.e. billing and shipping address)</i>. Users will then be presented a receipt, signifying that they have bought the product.</p>`,
     stack: ['HTML5', 'CSS3', 'JavaScript', 'Java', 'JDBC', 'MySQL', 'Apache Tomcat'],
     images: ['home.jpg'],
-    githubRepoLink: 'https://github.com/PGalicia/ScrapYard',
-    demoLink: null,
+    githubRepoLinks: [
+      {
+        text: 'Check Github Repo',
+        link: 'https://github.com/PGalicia/ScrapYard'
+      }
+    ],
     backgroundColorHex: '#800080'
   },
   {
@@ -155,8 +192,12 @@ export const PROJECTS: ProjectType[] = [
       `,
     stack: ['Lua', 'Love2D', 'Tiled', 'Aseprite'],
     images: ['game-photo.png', 'character-models.gif'],
-    githubRepoLink: 'https://github.com/PGalicia/Seance',
-    demoLink: null,
+    githubRepoLinks: [
+      {
+        text: 'Check Github Repo',
+        link: 'https://github.com/PGalicia/Seance'
+      }
+    ],
     backgroundColorHex: '#2A1322'
   }
 ]

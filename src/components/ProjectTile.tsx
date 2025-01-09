@@ -77,8 +77,8 @@ export default function ProjectTile({ project, className = '' }: ProjectTileProp
       allClasses.push('w-4/5', 'right-0', '-bottom-1-2')
     } else if (id === 'boolder') {
       allClasses.push('w-[140%]', '-right-6', '-bottom-2', 'max-w-none')
-    } else if (id === 'aprl') {
-      allClasses.push('w-36', 'right-4', 'top-1/2', '-translate-y-1/2')
+    } else if (id === 'wisely') {
+      allClasses.push('w-3/5', 'right-8', '-bottom-1-2')
     }
 
     return allClasses.join(' ')

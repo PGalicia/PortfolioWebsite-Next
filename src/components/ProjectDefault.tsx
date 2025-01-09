@@ -63,12 +63,6 @@ export default function ProjectDefault({ className = '' }: DefaultPropType) {
           className={project.gridPlacementClass}
         />
       ))}
-      {/* <ProjectTile
-        v-for="(project, index) in projectsWithPlacement"
-        :key="index"
-        :project="project"
-        :className="project.gridPlacementClass"
-      /> */}
     </div>
   )
 }

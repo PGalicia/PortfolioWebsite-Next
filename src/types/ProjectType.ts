@@ -1,4 +1,4 @@
-export type DemoType = {
+export type LinkType = {
   text: string,
   link: string
 }
@@ -10,8 +10,8 @@ export interface ProjectType {
   description: string,
   stack: string[],
   images: string[],
-  githubRepoLink: string,
-  demoLink: DemoType | null,
+  githubRepoLinks?: LinkType[],
+  demoLink?: LinkType | null,
   backgroundColorHex: string
 }
 
