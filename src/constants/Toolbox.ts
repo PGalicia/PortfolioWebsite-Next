@@ -79,11 +79,15 @@ export const TOOLBOX: ToolboxType[] = [
         isPro: true
       },
       {
-        skill: 'Webpack',
+        skill: 'AWS',
         isPro: true
       },
       {
-        skill: 'MySQL',
+        skill: 'Vercel',
+        isPro: true
+      },
+      {
+        skill: 'Webpack',
         isPro: true
       },
       {
@@ -92,7 +96,11 @@ export const TOOLBOX: ToolboxType[] = [
       },
       {
         skill: 'MongoDB',
-        isPro: false
+        isPro: true
+      },
+      {
+        skill: 'MySQL',
+        isPro: true
       },
       {
         skill: 'SQLite',
